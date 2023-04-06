@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Source Sans Pro", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(240,239,243);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 395px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 8px 8px 30px rgba(13, 3, 3, 0.554);
+padding: 20px;
+overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+display: non;
+}
+
+
+.container form{
+    width: 100%;
+    border: 1px solid rgba(82,74,235);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow:none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+.container form i{
+    padding-left: 10px;
+}
+.product-list{
+padding: 20px 0;
+}
+
+
+.product{
+    display: flex;
+    align-items: center;
+cursor: pointer;
+padding-bottom: 15px;
+}
+.product img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding:
+}
+.product .p-details{
+    padding-left: 15px;
+}
+
+
+.product .p-details h2{
+    font-size: 20px;
+    color: #1d1d1d;
+}
+.product .p-details h3{
+    font-size: 15px;
+  
+} 
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <form>
+        <i class="fas fa-search"></i>  <!-- icon-->  
+        <input
+          type="text"
+          name=""
+          id="search-item"
+          placeholder="search products" 
+          onkeyup="search()"
+        />
+      </form>
+     <div class="product-list" id="product-list">
+        <div class="product">
+          <img src="img/t1.jpg" alt="" />
+          <div class="p-details">
+            <h2>Tshirt for Evevryone</h2>
+            <h3>$100</h3>
+          </div>
+        </div>
+        <div class="product-list">
+        <div class="product">
+          <img src="img/s2.jpg" alt="" />
+          <div class="p-details">
+            <h2>Sneakers number 2 amd two</h2>
+            <h3>$34</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/h1.jpg" alt="" />
+          <div class="p-details">
+            <h2>Hudies fashion</h2>
+            <h3>$98</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/s1.jpg" alt="" />
+          <div class="p-details">
+            <h2>Sneaker 1</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/b3.jpg" alt="" />
+          <div class="p-details">
+            <h2>bag number 3</h2>
+            <h3>$10</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/h3.jpg" alt="" />
+          <div class="p-details">
+            <h2>huddies number 3</h2>
+            <h3>$19</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/b1.jpg" alt="" />
+          <div class="p-details">
+            <h2>bags number 1 and 1</h2>
+            <h3>$22</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/t3.jpg" alt="" />
+          <div class="p-details">
+            <h2>Tshirt number 3</h2>
+            <h3>$23</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/w3.jpg" alt="" />
+          <div class="p-details">
+            <h2>Watch number 3 and three</h2>
+            <h3>$26</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/h2.jpg" alt="" />
+          <div class="p-details">
+            <h2>Hudies number 2 and two</h2>
+            <h3>$22</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/w1.jpg" alt="" />
+          <div class="p-details">
+            <h2>Watch number 1 and one</h2>
+            <h3>$29</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/s3.jpg" alt="" />
+          <div class="p-details">
+            <h2>Sneakers number 3 and three</h2>
+            <h3>$27</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/w3.jpg" alt="" />
+          <div class="p-details">
+            <h2>Wrist watch number 3 and three</h2>
+            <h3>$20</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/t2.jpg" alt="" />
+          <div class="p-details">
+            <h2>Tshirt number 2 and two</h2>
+            <h3>$27</h3>
+          </div>
+        </div>
+         <div class="product-list">
+        <div class="product">
+          <img src="img/b2.jpg" alt="" />
+          <div class="p-details">
+            <h2>Bag number 2 and two</h2>
+            <h3>$22</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="java.js">
+      const search = () => {
+    const searchbox = document.getElementById("search-item").value.toUpperCase();
+    const storeitems = document.getElementById("product-list")
+    const product = document.querySelectorAll(".product")
+    const pname = storeitems.getElementsByTagName("h2")
+
+    for (var i = 0; i < pname.length; i++){
+        let match = product[i].getElementsByTagName("h2")[0];
+        
+        if (match) {
+            let textvalue = match.textContent || match.innerHTML
+            
+            if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                product[i].style.display = "";
+            } else {
+                product[i].style.display = "none";
+            }
+                
+        }
+    }
+}
+
+
+    </script>
+  </body>
+</html>
+
